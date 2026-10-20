@@ -1,0 +1,12 @@
+- insert:
+    - id: dsh-cast
+      name: '@ales8822/dsh-cast'
+      config:
+        autoActivate: ''
+        tokenBudget:
+          identity: 400
+          voice: 300
+          behavior: 300
+          expertise: 300
+          rules: 300
+          examples: 300

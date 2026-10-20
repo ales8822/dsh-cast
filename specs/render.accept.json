@@ -1,0 +1,17 @@
+{
+  "title": "dsh-cast client — real-browser render acceptance (composer + popover)",
+  "browser": "chromium",
+  "steps": [
+    { "action": "goto", "url": "http://127.0.0.1:3080/?token=yFepH0cBlo4QiVEhItyjsSoHP6t8K3Iwz9-KLO1iivQ" },
+    { "action": "wait", "ms": 4000 },
+    { "action": "expect_console_errors", "present": false },
+    { "action": "expect_text", "selector": "button[title=\"Switch persona\"]", "text": "🎭" },
+    { "action": "click", "selector": "button[title=\"Switch persona\"]" },
+    { "action": "wait", "ms": 1000 },
+    { "action": "expect_text", "selector": "text=Off", "text": "Off" },
+    { "action": "expect_text", "selector": "text=Silas", "text": "Silas" },
+    { "action": "expect_text", "selector": "text=A/B compare", "text": "A/B compare" },
+    { "action": "expect_console_errors", "present": false },
+    { "action": "screenshot", "name": "dsh-cast-composer-popover" }
+  ]
+}
